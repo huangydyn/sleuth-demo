@@ -1,0 +1,11 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: spring-server-consumer-one
+  cloud:
+    discovery:
+      enabled: false
+    circuit:
+      breaker:
+        enabled: false

@@ -1,0 +1,6 @@
+rootProject.name = 'sleuth-demo'
+include 'spring-server-enterpoint'
+include 'spring-server-consumer-one'
+include 'spring-server-consumer-two'
+
+

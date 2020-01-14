@@ -1,0 +1,14 @@
+spring:
+  jackson:
+    date-format: yyyy-MM-dd'T'HH:mm:ss.SSS'Z'
+    serialization:
+      write_dates_as_timestamps: false
+  sleuth:
+    supports-join: false
+
+logging:
+  level:
+    root: info
+    org:
+      springframework:
+        web: info
