@@ -13,3 +13,8 @@ logging:
       springframework:
         web: info
 
+feign:
+  okhttp:
+    enabled: true
+  httpclient:
+    enabled: false

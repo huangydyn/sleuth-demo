@@ -14,3 +14,14 @@ logging:
     org:
       springframework:
         web: info
+
+feign:
+  okhttp:
+    enabled: true
+  httpclient:
+    enabled: false
+  client:
+    config:
+      default:
+        connectTimeout: 5000
+        readTimeout: 5000
