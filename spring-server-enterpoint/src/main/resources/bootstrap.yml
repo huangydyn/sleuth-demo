@@ -6,6 +6,3 @@ spring:
   cloud:
     discovery:
       enabled: false
-    circuit:
-      breaker:
-        enabled: false

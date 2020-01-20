@@ -16,6 +16,8 @@ logging:
         web: info
 
 feign:
+  hystrix:
+    enabled: true
   okhttp:
     enabled: true
   httpclient:
@@ -23,5 +25,13 @@ feign:
   client:
     config:
       default:
-        connectTimeout: 5000
-        readTimeout: 5000
+        connectTimeout: 10000
+        readTimeout: 10000
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 3000
